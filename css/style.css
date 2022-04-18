@@ -230,7 +230,7 @@ background-image: url("../img/product_4.jpg");
 
 .grow_bar_3:hover{
  flex-grow:5;
- opacity: 1;
+
 }
 
 /* 模組化開始 */
