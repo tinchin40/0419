@@ -1,0 +1,145 @@
+/* banner開始 */
+*{
+
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+}
+.wave_banner_up {
+    width: 100%;
+    background-image: url("../img/news_bg.png");
+    background-repeat: repeat-x;
+    background-position: 0 300px;
+}
+
+.main_banner {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.left_banner {
+    background-image: url("../img/oneday.png");
+    width: 1200px;
+    height: 600px;
+    background-repeat: no-repeat;
+    border-radius: 0 0 20px 0;
+
+
+}
+
+.right_banner {
+    display: flex;
+}
+
+.right_icon {
+    display: flex;
+    margin-left: -60px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.right_icon a {
+    opacity: 1;
+}
+
+.right_icon a:hover {
+    opacity: .3;
+}
+
+.left_banner h3 {
+    color: #44A341;
+    font-size: 40px;
+    margin-top: -20px;
+    margin-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+.left_banner h2 {
+    color: #44A341;
+    font-size: 100px;
+    margin-top: 450px;
+    margin-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+/* 行程開始 */
+/* 中間1200大框 */
+.onedaybg1200{
+    width: 1200px;
+    margin:0 auto ;
+
+}
+
+/* 每個大框 */
+
+.main{
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    gap: 30px;
+    /* outline: 1px solid black; */
+    align-items: center;
+  margin-left: 70px;
+
+}
+
+.left_txt{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    
+    width: 500px;
+    height: 150px;
+}
+.right_txt{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    width: 500px;
+    height: 150px;
+
+
+}
+/* 有底色的標題字體的模組化按鈕 */
+.btn{
+    width: 180px;
+height: 40px;
+text-align: center;
+line-height: 41px;
+border-radius: 38px;
+font-size: 24px;
+
+
+}
+/* 有底色的標題字體的顏色 */
+.yellow{
+font-family: Verdana, Geneva, sans-serif;
+
+background: #F5E093;
+color: #603922;
+
+}
+
+.green{
+
+font-family: Verdana, Geneva, sans-serif;
+background: #DEEDD0;
+
+color: #47732C;
+
+}
+.brown{
+background: #EDE7CE;
+
+color: #603922;
+
+}
+/* 時間的字體 */
+h4{
+    color: #847869;
+    font-size: 22px;
+}
