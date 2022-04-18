@@ -1,0 +1,99 @@
+.main_bg_banner{
+    
+    width: 1200px;
+    margin: 0 auto;
+    margin-bottom:100px;
+    
+}
+
+.tent_pho_flex{
+    padding-top: 15px;
+   padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.tent_banner>img{
+  width: 1200px;
+  height: 600px;
+
+}
+.tent_pho_flex>img{
+    margin-right: 10px;
+}
+.tent_arr_left{
+    width: 40px;
+    height: 40px;
+  margin-right: 10px;
+
+}
+.tent_arr_right{
+
+    width: 40px;
+    height: 40px;
+}
+.room>h3{
+letter-spacing: 0.1em;
+font-weight:500;
+font-size: 28px;
+color: #413737;
+margin-bottom: 15px;
+}
+
+/* ---------房價表格-------------------------------- */
+
+.room_price {
+ 
+    margin: 20px auto;
+
+  }
+  table {
+    border-spacing: 0;
+    width: 100%;
+  }
+  tr {
+    
+    text-align: center;
+  }
+  td{
+    color:#413737;
+
+  }
+  th {
+      color:#413737;
+    padding: 10px;
+  }
+  table tbody tr:nth-child{
+    background-color: #eee
+  }
+  table thead {
+    background: #E6D7C7;
+    color: white;
+  }
+  table thead th{
+     border: 1.5px solid #CEB9A3;
+  }
+ 
+ table tbody td {
+    border: 1.5px solid #CEB9A3;
+    padding: 10px 0;
+  }
+  /* 房間介紹 */
+  h4{
+    letter-spacing: 0.1em;
+font-weight:500;
+    color: #413737;
+    font-size: 24px;
+  }
+  .room_line{
+    width: 100%;
+ background:#CEB9A3;
+ height: 2px;
+margin: 5px 0;
+}
+p{
+  color: #413737;
+  padding: 5px 0;
+  font-size: 16px;
+}
