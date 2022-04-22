@@ -4,7 +4,9 @@
     text-decoration: none;
 
 }
-
+body{
+    min-width: 1200px;
+}
 
 /* 模組化開始 */
 
@@ -83,6 +85,8 @@ li a{
     background-image: url("../img/wave_1.png");
     background-repeat: repeat-x;
     background-position: 0 300px;
+    /* outline: 1px solid black; */
+    border: 1px solid black;
 }
 
 .main_banner{
