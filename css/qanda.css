@@ -1,8 +1,9 @@
 /* banner開始 */
-*{
+* {
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 
 }
+
 /* .wave_banner_up {
     width: 100%;
     background-image: url("../img/news_bg.png");
@@ -64,37 +65,44 @@
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
+
 /* 問答內容 */
-.qanda1200{
+.qanda1200 {
     margin: 0 auto;
     width: 1200px;
 }
-.qanda{
+
+.qanda {
     margin-left: 50px;
-    padding: 20px;
+    padding: 10px 20px;
     width: 1040px;
     margin-top: 30px;
     margin-bottom: 30px;
     border: 1px solid #44A341;
     border-radius: 10px;
 }
-.qa_up{
-   
+
+.qa_up {
+justify-content: space-between;
     display: flex;
-  
     align-items: center;
     color: black;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
-.qa_up>img{
+
+/* 下拉箭頭 */
+.qa_up>img {
     width: 20px;
     height: 20px;
-  margin-left: 860px;
+
 
 }
 
+.qa_down {
+    display: none;
+}
 
-.qa_down>p{
+.qa_down>p {
     background: #F2F2F2;
     color: black;
     /* height: 50px; */
@@ -106,7 +114,8 @@
 
 
 }
-.ques1{
-    color:#44A341;
+
+.ques1 {
+    color: #44A341;
     font-size: 30px;
 }
