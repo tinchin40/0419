@@ -6,10 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>常見問題</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/qanda.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
     <script src="JS/qanda.js"></script>
+    <script src="JS/common.js"></script>
+
 
 
 </head>
@@ -18,8 +23,10 @@
     <!--header-->
     <div class="wrapper">
         <nav>
-            <a href="index.html"><img class="nav_logo" src="img/logo-02.png" alt=""></a>
 
+            <a href="index.html"><img class="nav_logo" src="img/logo-02.png" alt=""></a>
+            <!-- 漢堡 -->
+            <i class="fa-solid fa-bars" id="ham"></i>
             <!-- 導覽列的右邊 -->
             <ul>
                 <li>
@@ -78,19 +85,19 @@
                         <span class="ques1">Q1</span>
                         <span class="ques2">入住時間</span>
                     </div>
-                    
+
                     <img src="img/qa.png" alt="">
                 </div>
                 <div class="qa_down" id="a1">
                     <p>14:30PM之後</p>
                 </div>
             </div>
-            <!--  -->
+
             <div class="qanda">
                 <div class="qa_up" id="q2">
                     <div class="qa_up_left">
                         <span class="ques1">Q2</span>
-                    <span class="ques2">費用計算</span>
+                        <span class="ques2">費用計算</span>
                     </div>
                     <img src="img/qa.png" alt="">
                 </div>
@@ -98,42 +105,42 @@
                     <p>3歲 (不含) 以下均不收取費用。</p>
                 </div>
             </div>
-            <!--  -->
+
             <div class="qanda">
                 <div class="qa_up" id="q3">
                     <div class="qa_up_left">
                         <span class="ques1">Q3</span>
                         <span class="ques2">入住需知</span>
                     </div>
-                    
+
                     <img src="img/qa.png" alt="">
                 </div>
                 <div class="qa_down" id="a3">
                     <p>為防止大自然的小生物進入帳篷內，進出帳篷時請隨時拉上紗窗。</p>
                 </div>
             </div>
-            <!--  -->
+
             <div class="qanda">
                 <div class="qa_up" id="q4">
                     <div class="qa_up_left">
                         <span class="ques1">Q4</span>
                         <span class="ques2">入營須知</span>
                     </div>
-                   
+
                     <img src="img/qa.png" alt="">
                 </div>
                 <div class="qa_down" id="a4">
                     <p>為維護露營品質，本村全面禁止酗酒喧鬧、賭博、亂吐檳榔汁、打麻將、攜帶卡拉 OK 等設備入園。</p>
                 </div>
             </div>
-            <!--  -->
+
             <div class="qanda">
                 <div class="qa_up" id="q5">
                     <div class="qa_up_left">
                         <span class="ques1">Q5</span>
                         <span class="ques2">取消預定</span>
                     </div>
-                    
+
                     <img src="img/qa.png" alt="">
                 </div>
                 <div class="qa_down" id="a5">
@@ -143,14 +150,14 @@
                         預定日期當日至一日前取消，金額將不予退費。</p>
                 </div>
             </div>
-            <!--  -->
+
             <div class="qanda">
                 <div class="qa_up" id="q6">
                     <div class="qa_up_left">
                         <span class="ques1">Q6</span>
                         <span class="ques2">更改 / 延期</span>
                     </div>
-                   
+
                     <img src="img/qa.png" alt="">
                 </div>
                 <div class="qa_down" id="a6">
@@ -158,14 +165,14 @@
                         更改/延期異動完成後不得辦理取消退款。</p>
                 </div>
             </div>
-            <!--  -->
+
             <div class="qanda">
                 <div class="qa_up" id="q7">
                     <div class="qa_up_left">
                         <span class="ques1">Q7</span>
                         <span class="ques2">颱風因素</span>
                     </div>
-                    
+
                     <img src="img/qa.png" alt="">
                 </div>
                 <div class="qa_down" id="a7">
@@ -173,20 +180,7 @@
                         最晚請於預定日期前一天申請取消預定，可退還全數金額或延期一次，否則視同入住，不予退費。</p>
                 </div>
             </div>
-
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
         <!-- footer -->
         <footer>
             <div class="email">
@@ -214,10 +208,13 @@
 
                 <div class="copyright">
                     <div class="line"></div>
-                    <p>
-                        Copyright © Hoshino Valley.
-                        本網站為緯育TibaMe前端設計工程師班第76期學員專題作品，本平台僅供學習、展示之用。
-                    </p>
+                    <div class="copyright_txt">
+                        <p>
+                            Copyright © Hoshino Valley.
+                        </p>
+
+                        <p> 本網站為緯育TibaMe前端設計工程師班第76期學員專題作品，本平台僅供學習、展示之用。</p>
+                    </div>
                 </div>
             </div>
         </footer>

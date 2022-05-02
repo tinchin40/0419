@@ -6,7 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>星野樂谷</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
     <link rel="stylesheet" href="css/style.css">
+    <script src="JS/common.js"></script>
+
 
 
 
@@ -20,7 +24,7 @@
     <div class="wrapper">
         <nav>
             <a href="index.html"><img class="nav_logo" src="img/logo-02.png" alt=""></a>
-            
+            <i class="fa-solid fa-bars" id="ham"></i>
             <!-- 導覽列的右邊 -->
             <ul>
                 <li>
@@ -221,7 +225,7 @@
             <form action="">
                 <label for="" class="mail-1">E-mail</label>
                 <input name="user_name" placeholder="填入信箱獲得更多消息。" class="mail-2">
-                <input type="submit" class="email-btn">
+                <input type="submit" value="送出" class="email-btn " >
             </form>
             <div class="line"></div>
         </div>
@@ -242,10 +246,14 @@
 
             <div class="copyright">
                 <div class="line"></div>
-                <p>
-                    Copyright © Hoshino Valley.
-                    本網站為緯育TibaMe前端設計工程師班第76期學員專題作品，本平台僅供學習、展示之用。
-                </p>
+                <div class="copyright_txt">
+                    <p>
+                        Copyright © Hoshino Valley.
+                    </p>
+                   
+                    <p> 本網站為緯育TibaMe前端設計工程師班第76期學員專題作品，本平台僅供學習、展示之用。</p>
+                </div>
+                
             </div>
         </div>
     </footer>

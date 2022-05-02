@@ -58,8 +58,9 @@ li{
    height: 50px;    
 }
 li a{
-    width: 120px;
-    height: 60px;
+    padding: 0 20px;
+  /* width: 120px;
+    height: 60px; */
     display: block;
     background: rgb(255, 255, 255);
     color: #44A341;
@@ -77,16 +78,16 @@ li a{
      display: none;
  }
  ul>li:hover ol{
-    display: block;
+   display: block;
 }
+
 /* banner開始 */
 .wave_banner_up{
     width: 100%;
     background-image: url("../img/wave_1.png");
     background-repeat: repeat-x;
     background-position: 0 300px;
-    /* outline: 1px solid black; */
-    border: 1px solid black;
+   
 }
 
 .main_banner{
@@ -429,6 +430,89 @@ background-color: #94B8A0;
     cursor: pointer;
  }
 /* footer結束*/
+
+.fa-solid {
+    display: none;
+}
+
+/* header的漢堡開始 */
+@media screen and (max-width:428px) {
+    .wrapper {
+        width: 100%;
+    }
+
+    nav {
+        width: auto;
+        position: relative;
+    }
+
+    .fa-solid {
+        display: block;
+        float: right;
+        margin-top: 10px;
+        margin-right: 10px;
+        font-size: 30px;
+
+    }
+
+    nav ul {
+        position: absolute;
+        flex-direction: column;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        z-index: 2;
+    }
+nav ul li{
+    display: none;
+}
+
+  
+    li a {
+        border-bottom: 1px solid rgb(255, 255, 255);
+        background: #44A341;
+        color: #ffffff;
+    }
+
+    /* footer開始 */
+    .email {
+        display: none;
+    }
+
+    footer {
+        padding: 0 10px;
+    }
+
+    .footer_txt {
+        width: auto;
+    }
+
+    .copyright {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .copyright p {
+        padding: 0;
+    }
+
+    .line {
+        margin-bottom: 5px;
+    }
+
+    .footer_right img {
+        margin: 0;
+        margin-top: 10px;
+        margin-right: 10px;
+
+
+    }
+
+    .footer_left {
+        font-size: 14px;
+        padding: 10px 0;
+    }
+}
 
 
 

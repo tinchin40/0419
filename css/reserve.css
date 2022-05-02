@@ -241,3 +241,6 @@ hr{
     justify-content: space-between;
     margin-bottom: 50px;
 }
+.fa-solid {
+    display: none;
+}

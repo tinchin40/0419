@@ -106,5 +106,8 @@ border: 0;
     background: rgb(47, 47, 47);
     color: white;
 }
+.fa-solid {
+    display: none;
+}
 
 
