@@ -174,24 +174,21 @@ footer form input {
 
 /* header的漢堡開始 */
 @media screen and (max-width:428px) {
+
     .wrapper {
         width: 100%;
     }
-
     nav {
         width: auto;
         position: relative;
     }
-
     .fa-solid {
         display: block;
         float: right;
         margin-top: 10px;
         margin-right: 10px;
         font-size: 30px;
-
     }
-
     nav>ul {
         position: absolute;
         flex-direction: column;
@@ -201,12 +198,15 @@ footer form input {
         z-index: 2;
     }
 
-
-  
     li>a {
         border-bottom: 1px solid rgb(255, 255, 255);
         background: #44A341;
         color: #ffffff;
+    }
+
+    nav ul li ol {
+        
+        position: static;
     }
 
     /* footer開始 */
