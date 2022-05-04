@@ -6,8 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>訂單查詢</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/oder_check.css">
+
 </head>
 
 <body>
@@ -15,11 +20,12 @@
     <div class="wrapper">
         <nav>
             <a href="index.html"><img class="nav_logo" src="img/logo-02.png" alt=""></a>
-            
+            <!-- 漢堡 -->
+            <i class="fa-solid fa-bars" id="ham"></i>
             <!-- 導覽列的右邊 -->
             <ul>
                 <li>
-                    <a href="">帳篷展示</a>
+                    <a>帳篷展示</a>
                     <!-- 子選單 -->
                     <ol>
                         <li><a href="tent.html">露營車</a></li>
@@ -43,32 +49,34 @@
     </div>
     <!-- 中間內容 -->
     <div class="w1200bg">
-<div class="w1200">
-        <form class="main_check_up" action="">
-            <div class="oder">
-                <label for="" class="oder_search">訂單查詢:</label>
-                <input  name="oder_name" placeholder="EAXXXXXX" class="oder_num">
-            </div>
-            <div class="tel">
-                <label for="" class="oder_tel">電話號碼:</label>
-                <input name="oder_tel-2" placeholder="09XXXXXX" class="oder_tel-3">
-            </div>
-        </form>
-        <form action="">
-            <div class="main_check_down">
-                <div class="contact_us">
-                    <label for="" class="contact_us_1">聯絡我們:</label>
-                    <br>
-                    <input name="contact_us_2" placeholder="歡迎留言告知我們" class="contact_us_3">
+        <div class="w1200">
+            <form class="main_check_up" action="">
+                <div class="oder">
+                    <label for="" class="oder_search">訂單查詢:</label>
+                    <input name="oder_name" placeholder="EAXXXXXX" class="oder_num">
                 </div>
-            </div>
-        </form>
-        <input type="submit" value="送出查詢" class="submit_btn">
-        
-    </div>
-</div>
+                <div class="tel">
+                    <label for="" class="oder_tel">電話號碼:</label>
+                    <input name="oder_tel-2" placeholder="09XXXXXX" class="oder_tel-3">
+                </div>
+            </form>
+            <form action="">
+                <div class="main_check_down">
+                    <div class="contact_us">
+                        <label for="" class="contact_us_1">聯絡我們:</label>
+<br>
+                        <textarea name="" id="" cols="30" rows="10">歡迎留言告知我們</textarea>
+                        <input type="submit" value="送出查詢" class="submit_btn">
 
- 
+
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+
 
     <!-- <input type="submit" class="email-btn"> -->
 
@@ -101,11 +109,14 @@
                 <div class="line"></div>
                 <p>
                     Copyright © Hoshino Valley.
-                    本網站為緯育TibaMe前端設計工程師班第76期學員專題作品，本平台僅供學習、展示之用。
                 </p>
+
+                <p> 本網站為緯育TibaMe前端設計工程師班第76期學員專題作品，本平台僅供學習、展示之用。</p>
             </div>
         </div>
     </footer>
+    <script src="JS/common.js"></script>
+
 </body>
 
 </html>
