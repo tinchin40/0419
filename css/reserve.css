@@ -1,67 +1,68 @@
 /* 訂單查詢 */
 
-.w1200bg{
-    /* background: #FBF9F3; */
-    width: 100%;
-}
-.w1200{
- margin: 0 auto;
-   
+
+.w1200 {
+    margin: 0 auto;
     padding-top: 180px;
     width: 700px;
     margin-bottom: 180px;
-    
-    
+
+
 }
 
 /* 訂單備註標題 */
-.contact_us_1{
+.contact_us_1 {
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     color: #000000;
     opacity: .8;
 }
 
 /* 姓名全部 */
-.oder{
+.oder {
     margin-bottom: 10px;
 }
+
 /* 電話全部 */
-.tel{
+.tel {
     margin-bottom: 10px;
 }
+
 /* 姓名標題 */
 
-.oder_search{
+.oder_search {
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     color: #000000;
     /* font-weight: 600; */
     opacity: .8;
-  
+
 
 }
+
 /* 電話標題 */
 
-.oder_tel{
+.oder_tel {
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     color: #000000;
     font-weight: 500;
     opacity: .8;
 }
+
 /* 信箱標題 */
-.oder_mail{
+.oder_mail {
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     color: #000000;
     /* font-weight: bold; */
-    opacity: .8;  
+    opacity: .8;
 }
 
-.main_check_up{
- display: flex;
+.main_check_up {
+    display: flex;
     justify-content: space-between;
-    padding-bottom: 30px;  
+    padding-bottom: 30px;
 }
+
 /* 聯絡我們 輸入框*/
-.contact_us>input{
+.contact_us>textarea {
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     color: #000000;
     width: 700px;
@@ -70,10 +71,13 @@
     height: 100px;
     opacity: .8;
     cursor: pointer;
-    
+    padding: 10px;
+
+
 }
+
 /* 姓名 輸入框*/
-.main_check_up>.oder>input{
+.main_check_up>.oder>input {
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     color: #281C17;
     height: 30px;
@@ -82,81 +86,85 @@
     cursor: pointer;
     width: 145px;
     opacity: .8;
-    
+    padding: 10px;
 
 
-}  
-/* 電話 輸入框*/
-.main_check_up>.tel>input{
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    color: #281C17;
-    height: 30px;
-    border: 2px solid #6B6B6B;
-    border-radius: 15px;
-    cursor: pointer;
-    width: 145px;
-    opacity: .8;
-}  
-/* 信箱 輸入框*/
-.main_check_up>.mail>input{
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    color: #281C17;
-    height: 30px;
-    border: 2px solid #6B6B6B;
-    border-radius: 15px;
-    cursor: pointer;
-    width: 145px;
-    opacity: .8;
-}  
-.main_check_down>.contact_us>input{
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    color: #281C17;
-   border: 2px solid #6B6B6B;
-    border-radius: 15px;
-    cursor: pointer;
-    width: 700px;
-    opacity: .8;
-   
+
+
 }
+
+/* 電話 輸入框*/
+.main_check_up>.tel>input {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: #281C17;
+    height: 30px;
+    border: 2px solid #6B6B6B;
+    border-radius: 15px;
+    cursor: pointer;
+    width: 145px;
+    padding: 10px;
+    opacity: .8;
+}
+
+/* 信箱 輸入框*/
+.main_check_up>.mail>input {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: #281C17;
+    height: 30px;
+    border: 2px solid #6B6B6B;
+    border-radius: 15px;
+    cursor: pointer;
+    width: 145px;
+    opacity: .8;
+    padding: 10px;
+
+}
+
+
+
 
 /* 提交按鈕 */
-.submit_btn{
+.submit_btn {
     color: #000000;
     opacity: .7;
-font-weight:bold;
-border: 0;
+    font-weight: bold;
+    border: 0;
     width: 100px;
     height: 30px;
     cursor: pointer;
     margin-left: 325px;
     margin-top: 50px;
     margin-bottom: 10px;
-    
+
 }
+
 /* 提交按鈕 */
 
-.submit_btn:hover{
+.submit_btn:hover {
     background: #281C17;
     color: white;
 }
 
 /* 入住時間 */
-.check_time{
+.check_time {
     margin-bottom: 50px;
 }
-.check_time>form{
-    display:flex;
+
+.check_time>form {
+    display: flex;
     justify-content: space-between;
 }
+
 /* 住+退房標題 */
-.check_data{
+.check_data {
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     color: #000000;
     /* font-weight: 600; */
     opacity: .8;
 }
+
 /* 住房輸入框 */
-.check_in>input{
+.check_in>input {
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     color: #281C17;
     height: 30px;
@@ -166,9 +174,10 @@ border: 0;
     width: 145px;
     opacity: .8;
 }
+
 /* 退房輸入框 */
 
-.check_out>input{
+.check_out>input {
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     color: #281C17;
     height: 30px;
@@ -179,46 +188,53 @@ border: 0;
     opacity: .8;
 }
 
-hr{
+hr {
     margin: 10px 0;
     background: #603922;
 }
-.title{
-    
+
+.title {
+
     color: #603922;
     font-size: 22px;
-    
+
 
 }
-.title>span{
+
+.title>span {
     color: #603922;
-   font-size: 36px;
-   font-family:Verdana, Geneva, Tahoma, sans-serif;
-  border-left: 5px solid #E6D7C7 ;
- 
+    font-size: 36px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-left: 5px solid #E6D7C7;
+
 }
+
 /* 挑選帳篷 */
-.tent_chose{
+.tent_chose {
     width: 700px;
     margin-bottom: 50px;
 }
-.ps{
+
+.ps {
     color: #603922;
     font-size: 16px;
     margin-bottom: 10px;
 }
-.chose_txt{
+
+.chose_txt {
     color: #603922;
     margin-right: 10px;
     font-size: 16px;
 }
-.chose_txt>img{
+
+.chose_txt>img {
     width: 30px;
 
 }
+
 /* 入住人數 */
-.adult{
-    
+.adult {
+
     color: #281C17;
     height: 30px;
     border: 2px solid #6B6B6B;
@@ -227,7 +243,8 @@ hr{
     width: 145px;
     opacity: .8;
 }
-.child{
+
+.child {
     color: #281C17;
     height: 30px;
     border: 2px solid #6B6B6B;
@@ -236,11 +253,94 @@ hr{
     width: 145px;
     opacity: .8;
 }
-.tent_people{
+
+.tent_people {
     display: flex;
     justify-content: space-between;
     margin-bottom: 50px;
 }
+
 .fa-solid {
     display: none;
+}
+
+@media screen and (max-width:428px) {
+    .title>span {
+        font-size: 30px;
+    }
+    .title {
+        font-size: 16px;
+    
+    }
+    .w1200 {
+        padding-top: 50px;
+        width: calc(100% - 20px);
+        margin-bottom: 180px;
+        
+    }
+
+    /* 01挑選日期 */
+    .check_time>form {
+        flex-direction: column;
+    }
+
+    /* 住房輸入框 */
+    .check_in>input {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    
+    /* 照片 */
+    .tent_chose {
+        width: 100%;
+        margin-bottom: 0;
+    }
+    /* 03選擇入住人數 */
+    .tent_people {
+       flex-direction: column;
+        margin-bottom: 50px;
+    }
+    /* 成人 */
+    .adult{
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    /* 04填寫入住資料 */
+    .main_check_up {
+        flex-direction: column;
+        padding-bottom: 30px;
+    }
+/* 姓名 輸入框*/
+.main_check_up>.oder>input {
+    margin-top: 10px;
+
+    margin-bottom: 10px;
+}
+
+/* 電話 輸入框*/
+.main_check_up>.tel>input {
+    margin-bottom: 10px;
+}
+
+/* 信箱 輸入框*/
+.main_check_up>.mail>input {
+    margin-bottom: 10px;
+
+}
+.contact_us>textarea {
+    padding: 10px;
+    width: 100%;
+
+}
+/* 提交按鈕 */
+.submit_btn {
+  text-align: center;
+ 
+   margin: 0 auto;
+   margin-top: 50px;
+ 
+
+}
+
 }

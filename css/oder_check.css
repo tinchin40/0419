@@ -117,13 +117,13 @@ textarea {
 
 @media screen and (max-width:428px) {
     .w1200bg {
-        height: auto;
+      
         width: calc(100% - 20px);
         margin-top: 50px;
     }
 
     .w1200 {
-        width: calc(100% - 10px);
+        width: calc(100% - 20px);
         height: auto;
     }
 
@@ -141,7 +141,7 @@ textarea {
     .oder {
         margin-bottom: 30px;
     }
-
+/* 特殊需求 */
     textarea {
 
         width: auto;
@@ -165,6 +165,7 @@ textarea {
        margin-bottom: 50px;
    
     }
+
 }
 
 
