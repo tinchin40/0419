@@ -163,6 +163,10 @@ textarea {
         cursor: pointer;
        margin: 20px auto;
        margin-bottom: 50px;
+     -webkit-appearance: none; 
+       background-color: rgb(183, 183, 183);
+       
+
    
     }
 

@@ -1,10 +1,12 @@
 /* banner開始 */
-*{
+* {
+    box-sizing: border-box;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 
 }
+
 .wave_banner_up {
-    width: 100%;
+
     background-image: url("../img/news_bg.png");
     background-repeat: repeat-x;
     background-position: 0 300px;
@@ -54,6 +56,7 @@
     font-family: Arial, Helvetica, sans-serif;
 
 
+
 }
 
 .left_banner h2 {
@@ -67,10 +70,11 @@
 
 /* 主要內文右半邊開始 */
 /* 模組化 */
-.news_1200{
+.news_1200 {
     width: 1200px;
     margin: 0 auto;
 }
+
 .btn {
     display: block;
     width: 220px;
@@ -103,7 +107,7 @@
     color: #603922;
     font-size: 28px;
     padding-top: 15px;
-    
+
 }
 
 .card>h4 {
@@ -183,39 +187,43 @@
 /* 主要內文左半邊開始 */
 
 /* MORE按鈕模組化 */
-.news_btn{
+.news_btn {
     display: block;
     width: 75px;
     height: 30px;
-  border: 1px solid #44A341;
-  color:#44A341;
-  text-align: center;
-  font-size: 16px;
-  line-height: 30px;
-border-radius: 5px;
+    border: 1px solid #44A341;
+    color: #44A341;
+    text-align: center;
+    font-size: 16px;
+    line-height: 30px;
+    border-radius: 5px;
 
 }
-.news_btn:hover{
-    
-  background: #44A341;
-  color:#ffffff;
+
+.news_btn:hover {
+
+    background: #44A341;
+    color: #ffffff;
 
 }
+
 /* MORE按鈕模組化 */
 
-.news_flex{
+.news_flex {
     display: flex;
-   
+
 }
-.news_left{
+
+.news_left {
     width: 850px;
     background: rgb(255, 255, 255);
- 
+
     margin-right: 25px;
     border-radius: 8px;
     padding: 50px;
 
 }
+
 .news_bg {
     display: flex;
     width: 670px;
@@ -228,18 +236,21 @@ border-radius: 5px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
+
     padding-left: 10px;
     color: #603922;
 }
-.big_txt>h3{
-font-size: 16px;
-opacity: .8;
+
+.big_txt>h3 {
+    font-size: 16px;
+    opacity: .8;
 }
-.big_txt>h2{
+
+.big_txt>h2 {
     font-size: 26px;
 }
-.big_txt>p{
+
+.big_txt>p {
     font-size: 16px;
 }
 
@@ -250,7 +261,8 @@ opacity: .8;
     margin-bottom: 15px;
 
 }
-.sm_txt{
+
+.sm_txt {
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
@@ -260,7 +272,8 @@ opacity: .8;
     color: #603922;
 
 }
-.sm_txt>h3{
+
+.sm_txt>h3 {
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 
     font-size: 12px;
@@ -268,26 +281,96 @@ opacity: .8;
 
 
 }
-.sm_txt>h2{
+
+.sm_txt>h2 {
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 
     font-size: 20px;
     font-weight: 500;
-    
+
 }
-.sm_txt>p{
+
+.sm_txt>p {
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 
     font-size: 14px;
-    
+
 }
+
 /* 小more按鈕 */
-.sm_btn{
+.sm_btn {
     width: 70px;
     height: 25px;
     font-size: 14px;
     line-height: 24px;
 }
+
 .fa-solid {
     display: none;
+}
+
+@media screen and (max-width:428px) {
+
+
+    /* BANNER開始 */
+    .left_banner {
+        width: 100vw;
+        margin: 0;
+        height: 250px;
+        border-radius: 0 0 20px 20PX;
+        background-position-x: -140px;
+        background-size: cover;
+    }
+
+    .right_banner {
+        display: none;
+    }
+
+    .left_banner>h3 {
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 10px;
+
+    }
+
+    .left_banner>h2 {
+        font-size: 50px;
+        margin-bottom: 10px;
+        margin-top: 197px;
+        text-align: center;
+    }
+
+    /* 內文開始 */
+    .news_1200 {
+        width: 100%;
+       
+    }
+
+    .news_flex {
+padding-top: 50px;
+        width: calc(100% - 20px);
+        flex-direction: column;
+        margin: 0 auto;
+        border: 1px solid black;
+
+
+    }
+
+    .news_left {
+        width: 100%;
+        background: rgb(255, 255, 255);
+        border: 1px solid black;
+        margin: 0;
+        border-radius: 8px;
+        padding: 50px;
+    }
+
+    .news_bg {
+        display: flex;
+        width: 670px;
+
+        margin-bottom: 15px;
+    }
+
+
 }
