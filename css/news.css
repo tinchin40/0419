@@ -78,10 +78,9 @@
 .btn {
     display: block;
     width: 220px;
-    height: 50px;
+  
     border-radius: 8px;
-    /* border: 1px solid black; */
-    text-align: center;
+text-align: center;
     margin: 0 auto;
     margin-bottom: 15px;
     font-weight: 500;
@@ -125,7 +124,6 @@
 .event1:hover {
     background: #603922;
     color: #ffffff;
-
 }
 
 .event2 {
@@ -217,7 +215,6 @@
 .news_left {
     width: 850px;
     background: rgb(255, 255, 255);
-
     margin-right: 25px;
     border-radius: 8px;
     padding: 50px;
@@ -236,7 +233,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
     padding-left: 10px;
     color: #603922;
 }
@@ -267,7 +263,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
     padding-left: 10px;
     color: #603922;
 
@@ -275,24 +270,18 @@
 
 .sm_txt>h3 {
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-
     font-size: 12px;
     opacity: .8;
-
-
 }
 
 .sm_txt>h2 {
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-
     font-size: 20px;
     font-weight: 500;
-
 }
 
 .sm_txt>p {
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-
     font-size: 14px;
 
 }
@@ -342,35 +331,108 @@
 
     /* 內文開始 */
     .news_1200 {
-        width: 100%;
-       
+
+        width: calc(100% - 30px);
+        /* border: 1px solid black; */
+
+
     }
 
     .news_flex {
-padding-top: 50px;
-        width: calc(100% - 20px);
+        padding-top: 50px;
+        /* width: calc(100% - 30px); */
         flex-direction: column;
         margin: 0 auto;
-        border: 1px solid black;
-
-
+        /* border: 1px solid black; */
     }
 
     .news_left {
         width: 100%;
-        background: rgb(255, 255, 255);
-        border: 1px solid black;
+        /* border: 1px solid black; */
         margin: 0;
-        border-radius: 8px;
-        padding: 50px;
+        border-radius: 5px;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
     }
 
     .news_bg {
-        display: flex;
-        width: 670px;
-
+        flex-direction: column;
+        width: 100%;
         margin-bottom: 15px;
     }
+
+    /* MORE按鈕 */
+    .news_btn {
+        display: none;
+    }
+
+    /* 原本左邊的 大的*/
+    .big_txt>h2 {
+        font-size: 20px;
+    }
+
+    .big_txt>p {
+        font-size: 16px;
+    }
+
+    .lost {
+        display: none;
+
+    }
+
+    .news_small {
+        width: 48%;
+        margin-left: 5px;
+        flex-direction: column;
+  
+    }
+
+    .news_small img {
+        width: 100%;
+        height: auto;
+
+    }
+    /* 右半邊 包含活動消息 其他消息等等 */
+/* 框住三個按鈕的小卡 */
+    .card {
+        border-radius: 5px;
+        width: 100%;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+    }
+    /* 小卡裡面的文字大小標 */
+    .card>h3 {
+        font-size: 22px;
+        padding-top: 10px;
+    
+    }
+    
+    .card>h4 {
+        
+        font-size: 14px;
+        padding-bottom: 5px;
+    }
+    /* 按鈕 */
+    .btn {
+       
+        width:calc(100% - 60px);
+        border-radius: 5px;
+        margin-bottom: 10px;
+        font-weight:400;
+        font-size: 18px;
+        line-height: 50px;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    
+    }
+
+
+
+
+
+
+
 
 
 }
