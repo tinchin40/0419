@@ -267,7 +267,7 @@ footer form input {
 
 }
 
-.fa-solid {
+.hamburger {
     display: none;
 }
 
@@ -282,14 +282,17 @@ footer form input {
         width: auto;
         position: relative;
     }
+    .hamburger{
+        display: block;
 
-    nav .fa-solid {
+    }
+    /* nav .fa-solid {
         display: block;
         float: right;
         margin-top: 10px;
         margin-right: 10px;
         font-size: 30px;
-    }
+    } */
 
     nav>ul {
         position: absolute;
