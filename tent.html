@@ -6,8 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>帳篷展示</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/tent.css">
+
 </head>
 
 <body>
@@ -16,7 +18,7 @@
     <div class="wrapper">
         <nav>
             <a href="index.html"><img class="nav_logo" src="img/logo-02.png" alt=""></a>
-            
+
             <!-- 導覽列的右邊 -->
             <ul>
                 <li>
@@ -42,17 +44,69 @@
     <!-- 帳篷輪播banner -->
 
     <div class="main_bg_banner">
-        <div class="tent_banner">
-            <img  id="big_img" src="img/tent_img_big.jpg" alt="">
-            <div class="tent_pho_flex">
-                <a href=""><img class="tent_arr_left" src="img/tent_arr_left.png" alt=""></a>
-                <img id="sm_img1" src="img/tent_img_1.jpg" alt="">
-                <img id="sm_img2" src="img/tent_img_2.jpg" alt="">
-                <img id="sm_img3" src="img/tent_img_3.jpg" alt="">
-                <img id="sm_img4" src="img/tent_img_4.jpg" alt="">
-                <a href=""><img class="tent_arr_right" src="img/tent_arr_right.png" alt=""></a>
+        <div class="tent_banner swiper mySwiper2" style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff">
+            
+            <!-- <img id="big_img" src="img/tent_img_big.jpg" alt=""> -->
+            <div class="tent_pho_flex swiper-wrapper">
+                <!-- <a href=""><img class="tent_arr_left" src="img/tent_arr_left.png" alt=""></a> -->
+                <div class="swiper-slide">
+                    <img id="sm_img1" src="https://swiperjs.com/demos/images/nature-10.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img id="sm_img2" src="https://swiperjs.com/demos/images/nature-9.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img id="sm_img3" src="https://swiperjs.com/demos/images/nature-8.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img id="sm_img4" src="https://swiperjs.com/demos/images/nature-7.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img id="sm_img4" src="https://swiperjs.com/demos/images/nature-6.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img id="sm_img4" src="https://swiperjs.com/demos/images/nature-5.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img id="sm_img4" src="https://swiperjs.com/demos/images/nature-4.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img id="sm_img4" src="https://swiperjs.com/demos/images/nature-3.jpg" alt="">
+                </div>  
+                <!-- <a href=""><img class="tent_arr_right" src="img/tent_arr_right.png" alt=""></a> -->
             </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
+        <div thumbsSlider="" class="swiper mySwiper">
+            <div class="tent_pho_flex swiper-wrapper">
+                <!-- <a href=""><img class="tent_arr_left" src="img/tent_arr_left.png" alt=""></a> -->
+                <div class="swiper-slide">
+                    <img id="sm_img1" src="https://swiperjs.com/demos/images/nature-10.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img id="sm_img2" src="https://swiperjs.com/demos/images/nature-9.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img id="sm_img3" src="https://swiperjs.com/demos/images/nature-8.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img id="sm_img4" src="https://swiperjs.com/demos/images/nature-7.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img id="sm_img4" src="https://swiperjs.com/demos/images/nature-6.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img id="sm_img4" src="https://swiperjs.com/demos/images/nature-5.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img id="sm_img4" src="https://swiperjs.com/demos/images/nature-4.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img id="sm_img4" src="https://swiperjs.com/demos/images/nature-3.jpg" alt="">
+                </div>  
+        </div>
+    </div>
         <!-- 房間介紹 -->
         <div class="room_bg">
             <div class="room">
@@ -139,8 +193,9 @@
             </div>
         </div>
     </footer>
-<script src="JS/tent.js"></script>
-              
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="JS/tent.js"></script>
     <script src="JS/common.js"></script>
 
 

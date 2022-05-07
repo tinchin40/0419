@@ -9,10 +9,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+        <!-- AOS套件 -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <!-- AOS套件 -->
+
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/qanda.css">
-   
+
 
 
 
@@ -25,7 +28,12 @@
 
             <a href="index.html"><img class="nav_logo" src="img/logo-02.png" alt=""></a>
             <!-- 漢堡 -->
-            <i class="fa-solid fa-bars" id="ham"></i>
+            <!-- <i class="fa-solid fa-bars" id="ham"></i> -->
+            <button class="hamburger hamburger--vortex is-active" type="button">
+                <span class="hamburger-box ">
+                  <span class="hamburger-inner"></span>
+                </span>
+              </button>
             <!-- 導覽列的右邊 -->
             <ul>
                 <li>
@@ -77,7 +85,7 @@
         </div>
         <!-- banner -->
         <!-- 問與答開始 -->
-        <div class="qanda1200">
+        <div class="qanda1200"data-aos="fade-left">
             <div class="qanda">
                 <div class="qa_up">
                     <div class="qa_up_left">
@@ -217,10 +225,16 @@
                 </div>
             </div>
         </footer>
-        
-             <script src="JS/qanda.js"></script>
-    <script src="JS/common.js"></script>
-    
+       
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+         <!-- AOS套件 -->
+         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+         <!-- AOS套件 -->
+ 
+        <script src="JS/qanda.js"></script>
+        <script src="JS/common.js"></script>
+
         <!-- footer -->
 </body>
 

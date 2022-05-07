@@ -1,4 +1,9 @@
-banner開始 * {
+/* aos套件 解除滾動卷軸bug */
+html, body{
+    overflow-x: hidden;
+ }
+/* banner開始  */
+* {
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 
 }

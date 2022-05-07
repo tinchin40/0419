@@ -1,9 +1,12 @@
 // 漢堡
 $(document).ready(function () {
 
-    $('#ham').click(function () {
+    $('.hamburger').click(function () {
         $('ul').slideToggle(300);
+        $('button').toggleClass('is-active');
     })
+
+    
 
     $('nav li:first-child').click(function () {
         // console.log('sss');
