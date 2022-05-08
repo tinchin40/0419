@@ -426,6 +426,9 @@ text-align: center;
         font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     
     }
+    .wave_banner_up{
+       overflow: hidden;
+    }
 
 
 

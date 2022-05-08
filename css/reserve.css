@@ -83,7 +83,7 @@
     height: 30px;
     border: 2px solid #6B6B6B;
     border-radius: 15px;
-    cursor: pointer;
+    /* cursor: pointer; */
     width: 145px;
     opacity: .8;
     padding: 10px;
@@ -100,7 +100,7 @@
     height: 30px;
     border: 2px solid #6B6B6B;
     border-radius: 15px;
-    cursor: pointer;
+    /* cursor: pointer; */
     width: 145px;
     padding: 10px;
     opacity: .8;
@@ -113,7 +113,7 @@
     height: 30px;
     border: 2px solid #6B6B6B;
     border-radius: 15px;
-    cursor: pointer;
+    /* cursor: pointer; */
     width: 145px;
     opacity: .8;
     padding: 10px;
