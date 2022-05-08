@@ -20,7 +20,7 @@
 
 .left_banner {
     background-image: url("../img/banner.png");
-    width: 1200px;
+    width: 100%;
     height: 600px;
     background-repeat: no-repeat;
     border-radius: 0 0 20px 0;
@@ -51,7 +51,7 @@
 .left_banner h3 {
     color: #44A341;
     font-size: 40px;
-    margin-top: -20px;
+    margin-top: 380px;
     margin-left: 10px;
     font-family: Arial, Helvetica, sans-serif;
 
@@ -62,7 +62,7 @@
 .left_banner h2 {
     color: #44A341;
     font-size: 100px;
-    margin-top: 450px;
+    margin-top: 10px;
     margin-left: 10px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
@@ -136,16 +136,18 @@
     font-size: 16px;
 }
 
-.card>.more {
-    margin-left: 50px;
-}
-
+.card_a:hover .card_bg{
+    background-color: #44A341;
+    }
+    .card_a{
+   transition: .5s;
+    }
 /* flex grow 五張縮放圖片 */
 .grow_bar {
     margin: 0 auto;
     margin-top: 100px;
     width: 1400px;
-   width: 1300px;
+    width: 1300px;
     height: 400px;
     display: flex;
     justify-content: center;
@@ -180,10 +182,7 @@
     background-image: url("../img/product_5.jpg");
 }
 
-.grow_bar_3:hover {
-    flex-grow: 5;
 
-}
 
 /* 模組化開始 */
 .product_bar {
@@ -232,26 +231,25 @@
     text-align: center;
 }
 
-/* .news_slick {
+.news_slick {
     width: 1200px;
     margin: 0 auto;
-    display:flex;
+    display: flex;
     align-items: center;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     gap: 10px;
     padding: 50px 0 50px 0;
 
-} */
+}
 
 .news_card {
     border-radius: 15px 3px 0px 0px;
     background-color: #fff;
     width: 270px;
-    transition: .3s;
 }
 
 .news_card:hover {
-    box-shadow: 3px 3px 5px 1px rgba(27, 0, 0, 0.212)
+    box-shadow: 3px 3px 5px 1px rgba(27, 0, 0, 0.2);
 }
 
 .news_card>img {
@@ -285,7 +283,7 @@
     color: #281C17;
 }
 
-/* .news_arr_left {
+.news_arr_left {
     cursor: pointer;
     width: 40px;
 
@@ -294,7 +292,8 @@
 .news_arr_right {
     cursor: pointer;
     width: 40px;
-} */
+}
+/* 最新消息輪播jq */
 .swiper-slide {
     display: flex;
     overflow: hidden;
@@ -302,17 +301,25 @@
 
 .flex {
     width: 320px;
-    margin-left: 10px;
+    margin-left: 20px;
+  
 }
 
 .swiper {
-    width: 1000px;
-    height: 355px;
-    outline: 1px solid black;
+    width: 1200px;
+    height: 450px;
+    /* outline: 1px solid black; */
 }
-
-
-  
+.swiper-button-prev{
+    color: #ffffff;
+}
+.swiper-button-next{
+    color: #ffffff;
+}
+/* 
+@media screen and (max-width:1200px) {
+    
+} */
 
 
 @media screen and (max-width:428px) {
@@ -345,4 +352,31 @@
         margin-top: 197px;
         text-align: center;
     }
+    /* info自述區域 */
+.info {
+    width: 100%;
+   
+}
+.info p {
+    width: calc(100% - 50px);
+    height: 300px;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.info h4 {
+    padding-top: 20px;
+    font-size: 24px;
+}
+
+  /* flex grow 五張縮放圖片 */
+  .none1{
+      display: none;
+  }
+  /* 最新消息輪播 */
+  .swiper {
+    width: 100%;
+    height: 450px;
+    /* outline: 1px solid black; */
+}
 }
