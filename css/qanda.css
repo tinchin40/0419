@@ -80,6 +80,7 @@ html, body{
 .qanda1200 {
     margin: 0 auto;
     /* width: 100%; */
+
 }
 
 .qanda {
@@ -135,12 +136,12 @@ html, body{
 
 @media screen and (max-width:428px) {
 
-    /* 中間q&a 開始 */
-    .qanda {
-        margin-right: 10px;
-        margin-left: 10px;
-        width: auto;
+    .qanda1200{
+        margin-bottom: 30px;
+        margin-top: 30px;
     }
+    /* 中間q&a 開始 */
+
 
     .qa_down>p {
         margin-top: 10px;
@@ -190,9 +191,11 @@ margin-bottom: 10px;
     }
     /* 問與答開始 */
     .qanda {
-        /* margin: 0 10px; */
-      margin-top: 25px;
-      margin-bottom: 15px;
+        margin-right: 10px;
+        margin-left: 10px;
+     width: auto;
+      margin-top: 0px;
+      margin-bottom: 10px;
        
     }
     

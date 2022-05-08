@@ -336,6 +336,8 @@ hr {
 /* 提交按鈕 */
 .submit_btn {
   text-align: center;
+  background-color: rgb(183, 183, 183);
+  -webkit-appearance: none; 
  
    margin: 0 auto;
    margin-top: 50px;
