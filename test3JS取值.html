@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>123</title>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script> -->
+
+</head>
+
+<body>
+   <button onclick="getData();">連線取得資料</button>
+
+
+
+   <script>
+// 測試用網址 http://cwpeng.github.io/live-records-samples/data/products.json
+
+function getData(){
+// 利用fetch進行連線並取得資料
+
+fetch("https://cwpeng.github.io/live-records-samples/data/products.json").then(function(response){
+
+    // console.log(response);
+
+return response.json();
+
+}).then(function(data){
+// console.log(data);
+for(i=0; i<data.length;i++){
+    let product=data[i];
+    console.log(product);
+
+}
+});
+
+}
+
+   </script>
+    
+</body>
+
+</html>
