@@ -1,0 +1,152 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.w1200bg {
+  width: 900px;
+  margin: 0 auto;
+  margin-top: 150px;
+  margin-bottom: 150px;
+  padding-top: 30px;
+  padding-bottom: 70px;
+  background: #FBF9F3;
+  border-radius: 10px;
+}
+
+.w1200 {
+  margin: 0 auto;
+  width: 700px;
+}
+
+i {
+  pointer-events: none;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header h1 {
+  color: #603922;
+  font-size: 3rem;
+}
+
+.todolist_form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.todolist_form input,
+.todolist_form button {
+  border: none;
+  padding: 0.25rem 0.5rem;
+  font-size: 1.75rem;
+  margin: 0.1rem;
+}
+.todolist_form input[type=number] {
+  width: 50px;
+  text-align: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.todolist_btn {
+  background-color: #44A341;
+  cursor: pointer;
+  color: white;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section .todo {
+  width: 30vw;
+  display: flex;
+  align-items: center;
+  margin: 0.2rem 0;
+}
+section .todo p {
+  background-color: white;
+  color: black;
+  padding: 0.1rem 0.5rem;
+  font-size: 1.75rem;
+}
+section .todo .todo_text {
+  width: 50%;
+}
+section .todo .todo_time {
+  width: 20%;
+  text-align: center;
+}
+section .todo button {
+  padding: 0.25rem 0.5rem;
+  font-size: 1.75rem;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+section .todo .trash_class {
+  background-color: rgb(11, 122, 53);
+}
+section .todo .check_class {
+  background-color: rgb(255, 57, 43);
+}
+
+.todo_line {
+  opacity: 0.5;
+  text-decoration: line-through;
+  text-decoration-thickness: 0.2rem;
+  transition: all 0.3s ease;
+}
+
+@-webkit-keyframes scaleUp {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes scaleUp {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes scaleDown {
+  to {
+    transform: scale(0);
+  }
+}
+@keyframes scaleDown {
+  to {
+    transform: scale(0);
+  }
+}
+@media screen and (max-width: 428px) {
+  .w1200bg {
+    width: calc(100% - 20px);
+    margin-top: 50px;
+  }
+  .w1200 {
+    width: calc(100% - 20px);
+    height: auto;
+  }
+}/*# sourceMappingURL=todolist.css.map */

@@ -1,0 +1,169 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.w1200bg {
+    width: 900px;
+    margin: 0 auto;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    padding-top: 30px;
+    padding-bottom: 70px;
+    background: #FBF9F3;
+    border-radius: 10px;
+    // height: 500px;
+}
+
+.w1200 {
+    margin: 0 auto;
+  
+    // height: 700px;
+    width: 700px;
+}
+
+i{
+    pointer-events: none;
+    //先取消ｉ可以點擊
+}
+
+
+
+header {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        color: #603922;
+        font-size: 3rem;
+
+    }
+}
+
+.todolist_form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    input,
+    button {
+        border: none;
+        padding: 0.25rem 0.5rem;
+        font-size: 1.75rem;
+        margin: 0.1rem;
+    }
+
+    //只選中type="number" 的 input
+    input[type="number"] {
+        width: 50px;
+        text-align: center;
+    }
+
+}
+
+// 下面是拿掉input月份天數的上下箭頭
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+// 新增的按鈕
+.todolist_btn {
+    background-color: #44A341;
+    cursor: pointer;
+    color: white;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .todo {
+        width: 30vw;
+        display: flex;
+        align-items: center;
+        margin: 0.2rem 0;
+
+        p {
+            background-color: white;
+            color: black;
+            padding: 0.1rem 0.5rem;
+            font-size: 1.75rem;
+        }
+        .todo_text{
+            width: 50%;
+        }
+        .todo_time{
+            width: 20%;
+            text-align: center;
+        }
+        button{
+            padding: 0.25rem 0.5rem;
+            font-size: 1.75rem;
+            border: none;
+            cursor: pointer;
+            color: white;
+                    
+        }
+        .trash_class{
+            background-color: rgb(11, 122, 53);
+
+        }
+        .check_class{
+            background-color: rgb(255, 57, 43);
+        }
+    }
+
+}
+
+// todo 打勾後的效果 劃線 透明度變低
+.todo_line{
+opacity: 0.5;
+text-decoration: line-through;//畫線效果
+text-decoration-thickness: 0.2rem;//線條粗細
+transition: all 0.3s ease;
+
+}
+
+// todo 新增的動畫縮放效果
+@keyframes scaleUp{
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+// todo 移除的動畫縮放效果
+@keyframes scaleDown{
+    to{
+        transform: scale(0);
+    }
+}
+
+//rwd
+@media screen and (max-width:428px) {
+    .w1200bg {
+      
+        width: calc(100% - 20px);
+        margin-top: 50px;
+    }
+
+    .w1200 {
+        width: calc(100% - 20px);
+        height: auto;
+    }
+
+
+
+}
