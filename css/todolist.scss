@@ -155,15 +155,74 @@ transition: all 0.3s ease;
 @media screen and (max-width:428px) {
     .w1200bg {
       
-        width: calc(100% - 20px);
+        width: calc(100% - 15px);
         margin-top: 50px;
     }
 
     .w1200 {
-        width: calc(100% - 20px);
+        width: calc(100% - 15px);
         height: auto;
     }
-
-
-
+    .todolist_form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        input,
+        button {
+            border: none;
+            padding: 0.5rem 0.3rem;
+            font-size: 1.2rem;
+            margin: 0.1rem;
+        }
+    
+        //只選中type="number" 的 input
+        input[type="number"] {
+            width: 50px;
+            text-align: center;
+        }
+    
+    }
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        .todo {
+            width: 90vw;
+            display: flex;
+            align-items: center;
+            margin: 0.2rem 0;
+    
+            p {
+                background-color: white;
+                color: black;
+                padding: 0.1rem 3.5rem;
+                font-size: 1.75rem;
+            }
+            .todo_text{
+                width: 50%;
+            }
+            .todo_time{
+                width: 20%;
+                text-align: center;
+            }
+            button{
+                padding: 0.25rem 0.5rem;
+                font-size: 1.75rem;
+                border: none;
+                cursor: pointer;
+                color: white;
+                        
+            }
+            .trash_class{
+                background-color: rgb(11, 122, 53);
+    
+            }
+            .check_class{
+                background-color: rgb(255, 57, 43);
+            }
+        }
+    
+    }
 }
